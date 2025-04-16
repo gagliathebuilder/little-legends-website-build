@@ -37,9 +37,10 @@ export const products: Product[] = [
     name: "Galaxy Gel Medium Hold",
     description: "Medium hold gel with a cosmic shine for out-of-this-world hairstyles!",
     price: 13.99,
-    image: "/lovable-uploads/c7a9288c-3690-4c4a-baca-dfb5c475b7c5.png",
+    image: "/lovable-uploads/a5f14a0b-065b-4a36-8d7d-d54515df5292.png",
     holdLevel: "Medium",
     format: "Gel",
     slug: "galaxy-gel"
   },
 ];
+
