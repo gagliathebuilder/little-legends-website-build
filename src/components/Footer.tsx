@@ -1,6 +1,6 @@
-
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Mail } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -8,11 +8,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img 
-              src="/lovable-uploads/31c02903-214b-427a-b5e4-8de90ca8c0fb.png" 
-              alt="Little Legends Logo" 
-              className="h-16 mb-4"
-            />
+            <Link to="/">
+              <Logo size="lg" className="mb-4" />
+            </Link>
             <p className="text-white/80 mb-6">
               Strong hold hair products for kids with big imaginations.
             </p>

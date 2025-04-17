@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,15 +17,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <img
-                className="h-12 w-auto"
-                src="/lovable-uploads/31c02903-214b-427a-b5e4-8de90ca8c0fb.png"
-                alt="Little Legends Hold Co. Logo"
-              />
-              <span className="ml-2 text-xl font-baloo font-bold text-ll-purple-dark hidden md:block">
-                Little Legends Hold Co.
-              </span>
+            <Link to="/" className="flex-shrink-0">
+              <Logo />
             </Link>
           </div>
           
