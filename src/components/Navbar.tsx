@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ShoppingCart } from 'lucide-react';
@@ -26,6 +25,9 @@ const Navbar = () => {
           <div className="hidden md:ml-6 md:flex md:items-center md:space-x-8">
             <Link to="/shop" className="font-fredoka text-lg font-medium text-ll-purple hover:text-ll-purple-dark px-3 py-2 rounded-md">
               Shop
+            </Link>
+            <Link to="/merch" className="font-fredoka text-lg font-medium text-ll-purple hover:text-ll-purple-dark px-3 py-2 rounded-md">
+              Merch
             </Link>
             <Link to="/about" className="font-fredoka text-lg font-medium text-ll-purple hover:text-ll-purple-dark px-3 py-2 rounded-md">
               About
@@ -66,6 +68,9 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
             <Link to="/shop" className="block font-fredoka text-lg font-medium text-ll-purple hover:bg-ll-purple hover:text-white px-3 py-2 rounded-md" onClick={toggleMenu}>
               Shop
+            </Link>
+            <Link to="/merch" className="block font-fredoka text-lg font-medium text-ll-purple hover:bg-ll-purple hover:text-white px-3 py-2 rounded-md" onClick={toggleMenu}>
+              Merch
             </Link>
             <Link to="/about" className="block font-fredoka text-lg font-medium text-ll-purple hover:bg-ll-purple hover:text-white px-3 py-2 rounded-md" onClick={toggleMenu}>
               About

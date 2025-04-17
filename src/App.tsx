@@ -9,6 +9,7 @@ import React from 'react';
 // Pages
 import Index from "./pages/Index";
 import Shop from "./pages/Shop";
+import Merch from "./pages/Merch";
 import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
 import Ingredients from "./pages/Ingredients";
@@ -17,7 +18,6 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Wrap the application in a single React component to ensure hooks work correctly
 const App = () => {
   return (
     <React.StrictMode>
@@ -29,6 +29,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/shop" element={<Shop />} />
+              <Route path="/merch" element={<Merch />} />
               <Route path="/product/:slug" element={<ProductDetail />} />
               <Route path="/about" element={<About />} />
               <Route path="/ingredients" element={<Ingredients />} />
